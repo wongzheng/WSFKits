@@ -1,0 +1,22 @@
+{
+  "name": "WSFKits",
+  "version": "0.1.0",
+  "summary": "A short description of WSFKits.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zbad1171@qq.com/WSFKits",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zbad1171@qq.com": "wangzhen@cmstop.com"
+  },
+  "source": {
+    "git": "https://github.com/zbad1171@qq.com/WSFKits.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WSFKits/Classes/**/*"
+}

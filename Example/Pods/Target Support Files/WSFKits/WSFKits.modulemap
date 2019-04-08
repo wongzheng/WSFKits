@@ -1,0 +1,6 @@
+framework module WSFKits {
+  umbrella header "WSFKits-umbrella.h"
+
+  export *
+  module * { export * }
+}
