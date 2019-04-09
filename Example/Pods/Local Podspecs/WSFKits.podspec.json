@@ -1,18 +1,18 @@
 {
   "name": "WSFKits",
   "version": "0.1.0",
-  "summary": "A short description of WSFKits.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/zbad1171@qq.com/WSFKits",
+  "summary": "WSFKits.",
+  "description": "Add long description of the pod here.",
+  "homepage": "https://github.com/wongzheng/WSFKits",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "zbad1171@qq.com": "wangzhen@cmstop.com"
+    "wongzheng": "zbad1171@qq.com"
   },
   "source": {
-    "git": "https://github.com/zbad1171@qq.com/WSFKits.git",
+    "git": "https://github.com/wongzheng/WSFKits.git",
     "tag": "0.1.0"
   },
   "platforms": {
