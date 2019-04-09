@@ -35,18 +35,18 @@
 		15E8941AC0FCE6AF912A2ECC39BBCDEB /* Pods-WSFKits_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSFKits_Tests-dummy.m"; sourceTree = "<group>"; };
 		16C18FEEE76D05A1F3B7F950513181A7 /* Pods-WSFKits_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSFKits_Example-umbrella.h"; sourceTree = "<group>"; };
 		20B4ABC5F2EB1BF0BB2B5A726BA4CE82 /* Pods-WSFKits_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSFKits_Example-dummy.m"; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		31B82D49E1FC32EC63947301C40C0231 /* Pods-WSFKits_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4026CEA0F12817E6E23850E31A45714A /* Pods-WSFKits_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSFKits_Tests.modulemap"; sourceTree = "<group>"; };
 		4208E1805FAEABEAD79115C8CEE38789 /* WSFKits.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WSFKits.xcconfig; sourceTree = "<group>"; };
 		43D117BB474A7F9C40D92020792FE1AD /* WSFKits-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSFKits-umbrella.h"; sourceTree = "<group>"; };
 		5C39A7797F7AEDCB4C15A100D7A0DF4A /* WSFKits-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WSFKits-dummy.m"; sourceTree = "<group>"; };
-		6B3739CA08D679E37BE4C18BDB77B48E /* WSFKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WSFKits.framework; path = WSFKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3739CA08D679E37BE4C18BDB77B48E /* WSFKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSFKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6DB668335B325597DE388CBFFB136F /* WSFKits.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WSFKits.modulemap; sourceTree = "<group>"; };
 		8AA8733F08D4C4214F6934E31CD4162E /* Pods-WSFKits_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8F3C3322C8FA2FCF71C7E50254E635C5 /* WSFVoid.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WSFVoid.m; path = WSFKits/Classes/WSFVoid.m; sourceTree = "<group>"; };
 		90E766016D7728ED71DB996EF2A608C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93B50ED95A19A2EAE979345C194F5702 /* Pods_WSFKits_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WSFKits_Example.framework; path = "Pods-WSFKits_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B50ED95A19A2EAE979345C194F5702 /* Pods_WSFKits_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSFKits_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960C5B40410EF672C4C77C003860F9FB /* Pods-WSFKits_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSFKits_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A438C41BB21251B3EB2B2B00FCD6382B /* Pods-WSFKits_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSFKits_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9DF9BD06B6DE241D544F534F835AAA8 /* Pods-WSFKits_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,10 +57,11 @@
 		CCD92C86C3E32726697A65286A6A5B8F /* Pods-WSFKits_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSFKits_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CDA472760E78DCEDA751877CF4FB98E3 /* Pods-WSFKits_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSFKits_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D262AC5FB1653B647020A65F971D547A /* Pods-WSFKits_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSFKits_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4360CEFFA502734D6CDDF281B2A27DE /* Pods_WSFKits_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WSFKits_Tests.framework; path = "Pods-WSFKits_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4360CEFFA502734D6CDDF281B2A27DE /* Pods_WSFKits_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSFKits_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F7A011F3B4D605509F8C86D423801F /* WSFKits-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSFKits-prefix.pch"; sourceTree = "<group>"; };
 		D736FE7A4507A21398DFE8F9411E7CB5 /* Pods-WSFKits_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSFKits_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DD6E233ABD7AAF1560F67EEB90C1F946 /* Pods-WSFKits_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSFKits_Example.modulemap"; sourceTree = "<group>"; };
+		E03CE0C9225C4DC100ADB530 /* WSFConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSFConstants.h; sourceTree = "<group>"; };
 		E1C472C9CC347A2C35FC44F1C4AC7168 /* WSFVoid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFVoid.h; path = WSFKits/Classes/WSFVoid.h; sourceTree = "<group>"; };
 		F5B9CF07229C88A4F12DBC833B7ADF26 /* Pods-WSFKits_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSFKits_Example-resources.sh"; sourceTree = "<group>"; };
 		FE61C4A5F25A1D1FC935F4D4C899989A /* Pods-WSFKits_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		9EC1209C4D334D544C10419D2A3C1A41 /* WSFKits */ = {
 			isa = PBXGroup;
 			children = (
+				E03CE0C8225C4D8E00ADB530 /* Constants */,
 				E1C472C9CC347A2C35FC44F1C4AC7168 /* WSFVoid.h */,
 				8F3C3322C8FA2FCF71C7E50254E635C5 /* WSFVoid.m */,
 				D2D2088A0B8D39C3294F8B61E43863D5 /* Support Files */,
@@ -189,6 +191,15 @@
 			);
 			name = "Pods-WSFKits_Tests";
 			path = "Target Support Files/Pods-WSFKits_Tests";
+			sourceTree = "<group>";
+		};
+		E03CE0C8225C4D8E00ADB530 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E03CE0C9225C4DC100ADB530 /* WSFConstants.h */,
+			);
+			name = Constants;
+			path = WSFKits/Classes/Constants;
 			sourceTree = "<group>";
 		};
 		E5DAC99FB85E357267F98BAB93C2040E /* Pods-WSFKits_Example */ = {
@@ -663,8 +674,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
