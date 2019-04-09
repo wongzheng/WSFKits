@@ -7,7 +7,7 @@
 //
 
 #import "WSFViewController.h"
-//#import <WSFKits/>
+#import <WSFKits/NSObject+WSFExtension.h>
 #import <objc/message.h>
 
 @interface WSFViewController ()
@@ -19,14 +19,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSObject *obj = [NSObject new];
-    objc_msgSend(obj,NSSelectorFromString(@"abc"));
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

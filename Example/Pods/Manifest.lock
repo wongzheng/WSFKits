@@ -1,5 +1,9 @@
 PODS:
-  - WSFKits (0.1.0)
+  - WSFKits (0.1.1):
+    - WSFKits/Categories (= 0.1.1)
+    - WSFKits/Constants (= 0.1.1)
+  - WSFKits/Categories (0.1.1)
+  - WSFKits/Constants (0.1.1)
 
 DEPENDENCIES:
   - WSFKits (from `../`)
@@ -9,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  WSFKits: f5c613f6528558b24c9bd667978639b64741f6a7
+  WSFKits: 66ea4df18b9793bad5514e529e99a661f36a86af
 
 PODFILE CHECKSUM: 3ed668ebb26874fbf989eb072701c2553257f859
 
