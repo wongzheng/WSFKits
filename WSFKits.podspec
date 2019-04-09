@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WSFKits'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'WSFKits.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'WSFKits/Classes/**/*'
+  s.source_files = 'WSFKits/WSFKits.h'
   
   # s.resource_bundles = {
   #   'WSFKits' => ['WSFKits/Assets/*.png']
@@ -39,4 +39,13 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Constants' do |ss|
+    ss.source_files = 'WSFKits/Constants/**/*'
+  end
+
+  s.subspec 'Categories' do |ss|
+    ss.source_files = 'WSFKits/Categories/**/*'
+  end
+  
+
 end

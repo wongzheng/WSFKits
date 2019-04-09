@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08D3AB5DA7237E0B9DBF9090A9F648F0 /* WSFVoid.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C472C9CC347A2C35FC44F1C4AC7168 /* WSFVoid.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		177F6E734A8D61AA38F28C1437672778 /* WSFVoid.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C3322C8FA2FCF71C7E50254E635C5 /* WSFVoid.m */; };
 		17E77A313DDBFD657127F4A86858E360 /* Pods-WSFKits_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C18FEEE76D05A1F3B7F950513181A7 /* Pods-WSFKits_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2273A07D743B5BBFABE3F57DB994C3F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		34F52C9D35689A34D0033B5264ECDBCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -17,6 +15,12 @@
 		ABDFECFDF3E23062F4C2D993C598B48E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		C390B5022EF3E7A225B8A9981A824088 /* WSFKits-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D117BB474A7F9C40D92020792FE1AD /* WSFKits-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8C461CF638AF93788C174ACE27D5C2A /* Pods-WSFKits_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B4ABC5F2EB1BF0BB2B5A726BA4CE82 /* Pods-WSFKits_Example-dummy.m */; };
+		E03CE0D0225C649C00ADB530 /* WSFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE0CE225C649B00ADB530 /* WSFConstants.h */; };
+		E03CE0D1225C649C00ADB530 /* WSFLayoutConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE0CF225C649B00ADB530 /* WSFLayoutConstants.h */; };
+		E03CE0D9225C6B6B00ADB530 /* NSObject+WSFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE0D7225C6B6B00ADB530 /* NSObject+WSFExtension.h */; };
+		E03CE0DA225C6B6B00ADB530 /* NSObject+WSFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE0D8225C6B6B00ADB530 /* NSObject+WSFExtension.m */; };
+		E03CE0DD225C6BB500ADB530 /* UIView+WSFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE0DB225C6BB500ADB530 /* UIView+WSFExtension.h */; };
+		E03CE0DE225C6BB500ADB530 /* UIView+WSFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE0DC225C6BB500ADB530 /* UIView+WSFExtension.m */; };
 		F33CEDFF060A8831CEC13AFF1D13145A /* WSFKits-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C39A7797F7AEDCB4C15A100D7A0DF4A /* WSFKits-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +48,6 @@
 		6B3739CA08D679E37BE4C18BDB77B48E /* WSFKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSFKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6DB668335B325597DE388CBFFB136F /* WSFKits.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WSFKits.modulemap; sourceTree = "<group>"; };
 		8AA8733F08D4C4214F6934E31CD4162E /* Pods-WSFKits_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8F3C3322C8FA2FCF71C7E50254E635C5 /* WSFVoid.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WSFVoid.m; path = WSFKits/Classes/WSFVoid.m; sourceTree = "<group>"; };
 		90E766016D7728ED71DB996EF2A608C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93B50ED95A19A2EAE979345C194F5702 /* Pods_WSFKits_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSFKits_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960C5B40410EF672C4C77C003860F9FB /* Pods-WSFKits_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSFKits_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -61,8 +64,14 @@
 		D4F7A011F3B4D605509F8C86D423801F /* WSFKits-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSFKits-prefix.pch"; sourceTree = "<group>"; };
 		D736FE7A4507A21398DFE8F9411E7CB5 /* Pods-WSFKits_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSFKits_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DD6E233ABD7AAF1560F67EEB90C1F946 /* Pods-WSFKits_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSFKits_Example.modulemap"; sourceTree = "<group>"; };
-		E03CE0C9225C4DC100ADB530 /* WSFConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSFConstants.h; sourceTree = "<group>"; };
-		E1C472C9CC347A2C35FC44F1C4AC7168 /* WSFVoid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFVoid.h; path = WSFKits/Classes/WSFVoid.h; sourceTree = "<group>"; };
+		E03CE0CC225C63F000ADB530 /* WSFKits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WSFKits.h; path = WSFKits/WSFKits.h; sourceTree = "<group>"; };
+		E03CE0CE225C649B00ADB530 /* WSFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFConstants.h; sourceTree = "<group>"; };
+		E03CE0CF225C649B00ADB530 /* WSFLayoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFLayoutConstants.h; sourceTree = "<group>"; };
+		E03CE0D7225C6B6B00ADB530 /* NSObject+WSFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WSFExtension.h"; sourceTree = "<group>"; };
+		E03CE0D8225C6B6B00ADB530 /* NSObject+WSFExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WSFExtension.m"; sourceTree = "<group>"; };
+		E03CE0DB225C6BB500ADB530 /* UIView+WSFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WSFExtension.h"; sourceTree = "<group>"; };
+		E03CE0DC225C6BB500ADB530 /* UIView+WSFExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WSFExtension.m"; sourceTree = "<group>"; };
+		E03CE0DF225C77D100ADB530 /* WSFCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSFCategories.h; sourceTree = "<group>"; };
 		F5B9CF07229C88A4F12DBC833B7ADF26 /* Pods-WSFKits_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WSFKits_Example-resources.sh"; sourceTree = "<group>"; };
 		FE61C4A5F25A1D1FC935F4D4C899989A /* Pods-WSFKits_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,10 +132,10 @@
 		9EC1209C4D334D544C10419D2A3C1A41 /* WSFKits */ = {
 			isa = PBXGroup;
 			children = (
-				E03CE0C8225C4D8E00ADB530 /* Constants */,
-				E1C472C9CC347A2C35FC44F1C4AC7168 /* WSFVoid.h */,
-				8F3C3322C8FA2FCF71C7E50254E635C5 /* WSFVoid.m */,
+				E03CE0D2225C690700ADB530 /* Categories */,
+				E03CE0CD225C649B00ADB530 /* Constants */,
 				D2D2088A0B8D39C3294F8B61E43863D5 /* Support Files */,
+				E03CE0CC225C63F000ADB530 /* WSFKits.h */,
 			);
 			name = WSFKits;
 			path = ../..;
@@ -193,13 +202,27 @@
 			path = "Target Support Files/Pods-WSFKits_Tests";
 			sourceTree = "<group>";
 		};
-		E03CE0C8225C4D8E00ADB530 /* Constants */ = {
+		E03CE0CD225C649B00ADB530 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				E03CE0C9225C4DC100ADB530 /* WSFConstants.h */,
+				E03CE0CE225C649B00ADB530 /* WSFConstants.h */,
+				E03CE0CF225C649B00ADB530 /* WSFLayoutConstants.h */,
 			);
 			name = Constants;
-			path = WSFKits/Classes/Constants;
+			path = WSFKits/Constants;
+			sourceTree = "<group>";
+		};
+		E03CE0D2225C690700ADB530 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E03CE0DF225C77D100ADB530 /* WSFCategories.h */,
+				E03CE0D7225C6B6B00ADB530 /* NSObject+WSFExtension.h */,
+				E03CE0D8225C6B6B00ADB530 /* NSObject+WSFExtension.m */,
+				E03CE0DB225C6BB500ADB530 /* UIView+WSFExtension.h */,
+				E03CE0DC225C6BB500ADB530 /* UIView+WSFExtension.m */,
+			);
+			name = Categories;
+			path = WSFKits/Categories;
 			sourceTree = "<group>";
 		};
 		E5DAC99FB85E357267F98BAB93C2040E /* Pods-WSFKits_Example */ = {
@@ -228,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C390B5022EF3E7A225B8A9981A824088 /* WSFKits-umbrella.h in Headers */,
-				08D3AB5DA7237E0B9DBF9090A9F648F0 /* WSFVoid.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +258,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03CE0D1225C649C00ADB530 /* WSFLayoutConstants.h in Headers */,
 				17E77A313DDBFD657127F4A86858E360 /* Pods-WSFKits_Example-umbrella.h in Headers */,
+				E03CE0D9225C6B6B00ADB530 /* NSObject+WSFExtension.h in Headers */,
+				E03CE0D0225C649C00ADB530 /* WSFConstants.h in Headers */,
+				E03CE0DD225C6BB500ADB530 /* UIView+WSFExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +390,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C461CF638AF93788C174ACE27D5C2A /* Pods-WSFKits_Example-dummy.m in Sources */,
+				E03CE0DA225C6B6B00ADB530 /* NSObject+WSFExtension.m in Sources */,
+				E03CE0DE225C6BB500ADB530 /* UIView+WSFExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33CEDFF060A8831CEC13AFF1D13145A /* WSFKits-dummy.m in Sources */,
-				177F6E734A8D61AA38F28C1437672778 /* WSFVoid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

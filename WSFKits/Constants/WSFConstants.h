@@ -8,9 +8,9 @@
 #ifndef WSFConstants_h
 #define WSFConstants_h
 
+#import "WSFLayoutConstants.h"
 
 #define CurrentViewController [(UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController viewControllers].lastObject
-
 #define EndEditing()  [CurrentViewController.view endEditing:YES]
 
 #define WeakSelfDefined \
