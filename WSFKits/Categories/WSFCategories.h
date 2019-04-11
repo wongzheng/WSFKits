@@ -8,7 +8,8 @@
 #ifndef WSFCategories_h
 #define WSFCategories_h
 
-#import "NSObject+WSFExtension.h"
 #import "UIView+WSFExtension.h"
+#import "NSArray+WSFExtension.h"
+#import "NSObject+WSFExtension.h"
 
 #endif /* WSFCategories_h */

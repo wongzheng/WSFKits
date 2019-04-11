@@ -7,8 +7,6 @@
 //
 
 #import "WSFViewController.h"
-#import <WSFKits/NSObject+WSFExtension.h>
-#import <objc/message.h>
 
 @interface WSFViewController ()
 
@@ -19,11 +17,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    NSMutableArray *test = [NSMutableArray array];
+    id obj = nil;
+//    [test addObject:obj];
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    dic[obj] = nil;
+    NSLog(dic);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end
