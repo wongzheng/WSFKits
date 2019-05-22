@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (WSFExtension)
 
+@property (nonatomic, getter=isShown) BOOL shown;
+
 /**
  *  视图按传入颜色水平垂直等分渐变
  */

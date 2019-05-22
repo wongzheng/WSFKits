@@ -29,4 +29,13 @@
     [self wsf_insertObject:obj atIndex:index];
 }
 
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    if (![super forwardingTargetForSelector:aSelector]) {
+        if ([self.firstObject respondsToSelector:aSelector]) {
+            return self.firstObject;
+        }
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}
+
 @end

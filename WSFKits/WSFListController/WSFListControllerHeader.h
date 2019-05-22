@@ -8,5 +8,6 @@
 #ifndef WSFListControllerHeader_h
 #define WSFListControllerHeader_h
 
+#import "UIViewController+WSFListExtension.h"
 
 #endif /* WSFListControllerHeader_h */

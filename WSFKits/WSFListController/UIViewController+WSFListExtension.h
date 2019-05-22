@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MJRefresh/MJRefresh.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController (WSFListExtension)
+@interface UIViewController (WSFListExtension) <UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong, readonly) UITableView *wsf_tableView;
 
 @end
 

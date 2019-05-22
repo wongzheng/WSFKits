@@ -9,6 +9,14 @@
 
 @implementation UIView (WSFExtension)
 
+- (BOOL)isShown {
+    return !self.isHidden;
+}
+
+- (void)setShown:(BOOL)shown {
+    self.hidden = !shown;
+}
+
 - (void)gradientLayerWithColors:(NSArray<UIColor *> *)colors horizontal:(BOOL)isHorizontal vertical:(BOOL)isVertical
 {
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
