@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
 
-UIBorderSideTypeAll  = 0,
+UIBorderSideTypeAll = 0,
 
 UIBorderSideTypeTop = 1 << 0,
 
