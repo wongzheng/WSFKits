@@ -34,4 +34,18 @@
     return newImage;
 }
 
+- (UIImage *)blurryImageWithBlurLevel:(CGFloat)blur {
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *ciImage = [CIImage imageWithCGImage:self.CGImage];
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:ciImage forKey:kCIInputImageKey];
+    //设置模糊程度
+    [filter setValue:@(blur) forKey: @"inputRadius"];
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    CGImageRef outImage = [context createCGImage: result fromRect:ciImage.extent];
+    UIImage * blurImage = [UIImage imageWithCGImage:outImage];
+    CGImageRelease(outImage);
+    return blurImage;
+}
+
 @end

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 将图片用传入的颜色重绘 */
 - (UIImage *)imageWithColor:(UIColor *)color;
+/** 使用高斯模糊的方式重绘图片 */
+- (UIImage *)blurryImageWithBlurLevel:(CGFloat)blur;
 
 @end
 

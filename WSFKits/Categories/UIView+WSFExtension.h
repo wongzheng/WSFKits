@@ -9,6 +9,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
+
+UIBorderSideTypeAll  = 0,
+
+UIBorderSideTypeTop = 1 << 0,
+
+UIBorderSideTypeBottom = 1 << 1,
+
+UIBorderSideTypeLeft = 1 << 2,
+
+UIBorderSideTypeRight = 1 << 3,
+};
+
+
 @interface UIView (WSFExtension)
 
 @property (nonatomic, getter=isShown) BOOL shown;
@@ -25,6 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  设置视图的边框宽度及颜色
  */
 - (void)setBorderWidth:(CGFloat)width color:(UIColor *)color;
+/**
+ *  设置边界的方向，颜色及宽度
+ */
+- (UIView *)borderForColor:(UIColor *)color borderWidth:(CGFloat)borderWidth borderType:(UIBorderSideType)borderType;
 
 @end
 

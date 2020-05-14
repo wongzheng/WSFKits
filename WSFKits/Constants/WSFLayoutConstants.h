@@ -21,6 +21,8 @@
 //异性全面屏
 #define   isFullScreenDevice    (isIphoneX_XS || isIphoneXR_XSMax)
 
+
+
 // Status bar height.
 #define  StatusBarHeight     (isFullScreenDevice ? 44.f : 20.f)
 

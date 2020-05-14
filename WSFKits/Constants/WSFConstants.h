@@ -13,6 +13,8 @@
 #define CurrentViewController [(UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController viewControllers].lastObject
 #define EndEditing()  [CurrentViewController.view endEditing:YES]
 
+#define WSFAppVersion               [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+
 #define WeakSelfDefined \
 __weak typeof(self) weakSelf = self;
 
@@ -70,5 +72,14 @@ _##propertyname = propertyname;   \
 }   \
 return _##propertyname;   \
 }
+// ImageNamed
+/* 直接填写图片名称，不用加@"" */
+#define ImageName(name) [UIImage imageNamed:@(#name)]
+#define StringFormat(format, ...)  [NSString stringWithFormat:format,  __VA_ARGS__]
+
+#define PostNtfNamed(name) [[NSNotificationCenter defaultCenter] postNotificationName:name object:nil]
+#define PostNtf(name,obj) [[NSNotificationCenter defaultCenter] postNotificationName:name object:obj]
+#define AddSelfObserver(selName,ntfName) [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selName) name:ntfName object:nil]
+#define RemoveSelfObserver [[NSNotificationCenter defaultCenter]removeObserver:self]
 
 #endif /* WSFConstants_h */

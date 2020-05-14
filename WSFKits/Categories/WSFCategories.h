@@ -13,5 +13,6 @@
 #import "NSObject+WSFExtension.h"
 #import "NSString+WSFExtension.h"
 #import "UIImage+WSFExtension.h"
+#import "UILabel+WSFExtension.h"
 
 #endif /* WSFCategories_h */

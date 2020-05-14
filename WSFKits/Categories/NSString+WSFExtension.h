@@ -11,7 +11,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (WSFExtension)
 
++ (NSString *)stringWithTimeInerval:(NSTimeInterval)timeInterval format:(NSString *)format;
++ (NSTimeInterval)timeInervalWithString:(NSString *)string format:(NSString *)format;
+
++ (NSArray *)cDayName;
++ (NSArray *)cMonName;
++ (NSArray *)weekDay;
+
 - (NSString *)endingSubstringWithCount:(NSInteger)count;
+
+
 
 @end
 

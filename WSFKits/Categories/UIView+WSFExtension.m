@@ -43,4 +43,39 @@
     self.layer.borderWidth = width;
     self.layer.borderColor = color.CGColor;
 }
+
+- (UIView *)borderForColor:(UIColor *)color borderWidth:(CGFloat)borderWidth borderType:(UIBorderSideType)borderType {
+    if (borderType == UIBorderSideTypeAll) {
+        self.layer.borderWidth = borderWidth;
+        self.layer.borderColor = color.CGColor;
+        return self;
+    }
+    if (borderType & UIBorderSideTypeLeft) {
+        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(0.f, 0.f) toPoint:CGPointMake(0.0f, self.frame.size.height) color:color borderWidth:borderWidth]];
+    }
+    if (borderType & UIBorderSideTypeRight) {
+        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(self.frame.size.width, 0.0f) toPoint:CGPointMake( self.frame.size.width, self.frame.size.height) color:color borderWidth:borderWidth]];
+    }
+    if (borderType & UIBorderSideTypeTop) {
+        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(0.0f, 0.0f) toPoint:CGPointMake(self.frame.size.width, 0.0f) color:color borderWidth:borderWidth]];
+    }
+    if (borderType & UIBorderSideTypeBottom) {
+        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(0.0f, self.frame.size.height) toPoint:CGPointMake( self.frame.size.width, self.frame.size.height) color:color borderWidth:borderWidth]];
+    }
+    return self;
+}
+
+- (CAShapeLayer *)addLineOriginPoint:(CGPoint)p0 toPoint:(CGPoint)p1 color:(UIColor *)color borderWidth:(CGFloat)borderWidth
+{
+    UIBezierPath * bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint:p0];
+    [bezierPath addLineToPoint:p1];
+    CAShapeLayer * shapeLayer = [CAShapeLayer layer];
+    shapeLayer.strokeColor = color.CGColor;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    shapeLayer.path = bezierPath.CGPath;
+    shapeLayer.lineWidth = borderWidth;
+    return shapeLayer;
+}
+
 @end
