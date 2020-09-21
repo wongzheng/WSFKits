@@ -42,8 +42,8 @@ Pod::Spec.new do |s|
   # s.dependency 'MJRefresh', '>= 3.1.12'
 
   s.subspec 'Classes' do |ss|
-    ss.dependency 'WSFKits/Categories'
     ss.source_files = 'WSFKits/Classes/**/*'
+    ss.dependency 'WSFKits/Categories'
   end
 
   s.subspec 'Constants' do |ss|
