@@ -22,7 +22,7 @@ pod 'WSFKits'
 
 ## Author
 
-zbad1171@qq.com, wangzhen@cmstop.com
+zbad1171@qq.com
 
 ## License
 

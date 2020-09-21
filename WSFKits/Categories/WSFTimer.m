@@ -7,7 +7,7 @@
 //
 
 #import "WSFTimer.h"
-#import <WSFKits/NSObject+WSFExtension.h>
+#import "NSObject+WSFExtension.h"
 
 @implementation WSFTimer
 

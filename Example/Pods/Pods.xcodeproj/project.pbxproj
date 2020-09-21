@@ -15,10 +15,8 @@
 		13611CB0839D7F8C3EFCB9F9ED5495BD /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 53FB6C27E5598E0FEABB2C4E9C20DE50 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CD4B6949D43BEBE03016C6BF2AC0008 /* UILabel+WSFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 61ACAEC8F60D7C44A4B23734E389BF92 /* UILabel+WSFExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22513825A54DC9B8C23BF0CC7F45B00F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E5CCADD65E9A91F24E8A35D84C993C /* MJRefreshConst.m */; };
-		2974F9565EE03920864F9D2493B1ECDE /* WSFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F98E0CF6FB239D988A9519E42BDBB78 /* WSFTimer.m */; };
 		31AA706E4E2E4BE329267FA32D671924 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060D21B96F7C07109CA7B44391CBC060 /* Foundation.framework */; };
 		35205FE713D0770A35A2210AA5364ACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060D21B96F7C07109CA7B44391CBC060 /* Foundation.framework */; };
-		36580D00977DA29F6F1BC17735E1C2FF /* WSFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1BD3F56132575A779C1A9FA6B5690E /* WSFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36D160E73A81473F44B1AE677430190C /* NSObject+WSFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F7A3A41880A696CC3DE937BAF59814 /* NSObject+WSFExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39172F66777E6BC6EBFFC5948E3CC765 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7D7124BEF56B10F15FF53187295ED /* MJRefreshNormalHeader.m */; };
 		4055A0ACF4681DEA04E2F0AECD0B97B2 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7108FD20B2118B93A5C461C4423CCD /* UIScrollView+MJRefresh.m */; };
@@ -78,6 +76,8 @@
 		D74F9EC34733AA4850B4EFAB7518614B /* Pods-WSFKits_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5557AD93C4C66900EAD0E5DB7A4CF59C /* Pods-WSFKits_Tests-dummy.m */; };
 		D8328429281E82F67DB47AF6C9D95191 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C13D16523502D6EB4FFEE319329B79CD /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCCC7E7E734A732901932B2E9D662EE7 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F444D8A07B8B7689021A4F1468B40901 /* MJRefreshAutoStateFooter.m */; };
+		E0C3299C25187EDF0066DD83 /* WSFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C3299A25187EDF0066DD83 /* WSFTimer.m */; };
+		E0C3299D25187EDF0066DD83 /* WSFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C3299B25187EDF0066DD83 /* WSFTimer.h */; };
 		EB209DF5DE13F4D802DA1BE20A9CEBD2 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E8D226D41F516275B068284EE36584 /* MJRefreshBackStateFooter.m */; };
 		ED3E2C1051BAC5B50BE441D95D8801C0 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 986847E7CB2A58D3B86B7FDC8B754C42 /* MJRefreshBackGifFooter.m */; };
 		EECE40C6F296379F86ABB36AF79BB8EC /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7AFBFBC6F8B676D9B17B5AE1AC2E0C /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -124,13 +124,13 @@
 		07453FB24D1A034E58A9904F4573D4C7 /* NSDictionary+WSFExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+WSFExtension.h"; path = "WSFKits/Categories/NSDictionary+WSFExtension.h"; sourceTree = "<group>"; };
 		0D95562049C7B0E82EF7CDC2660CBA3B /* Pods-WSFKits_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSFKits_Example-dummy.m"; sourceTree = "<group>"; };
 		0E29400CCC549DAA0D5C2CE89B91914D /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
-		0F4F5F0DF6F6AC7C2E48EEE13314ED98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0F4F5F0DF6F6AC7C2E48EEE13314ED98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		13154C537471891B33549ECF0DE40D59 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
 		1517316DA9F712BC9EFA85A540A1BD90 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
 		16F37D77905DAD608AA3FF638CD3324A /* Pods-WSFKits_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSFKits_Example-Info.plist"; sourceTree = "<group>"; };
 		1B486CCD2E40709878FF9351E4EBA401 /* WSFKits-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WSFKits-dummy.m"; sourceTree = "<group>"; };
 		1B747C8AA16EEEF79FA890CCB3621223 /* Pods-WSFKits_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2503883D7C3766C7CF63759EDA199FF0 /* WSFKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WSFKits.framework; path = WSFKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2503883D7C3766C7CF63759EDA199FF0 /* WSFKits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSFKits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D55ACA6C68449F5EF4585ED2B2BDAB /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
 		28F7A3A41880A696CC3DE937BAF59814 /* NSObject+WSFExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+WSFExtension.h"; path = "WSFKits/Categories/NSObject+WSFExtension.h"; sourceTree = "<group>"; };
 		2B5D05399C234F146A317A2EE95A5858 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
@@ -140,7 +140,6 @@
 		36B0115A7F6FE73BD0E1BFF3C98DC1CC /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
 		36DE8903675C55C86D585AADE2DABF0C /* WSFCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFCategories.h; path = WSFKits/Categories/WSFCategories.h; sourceTree = "<group>"; };
 		39F6400FABF432996EE3A28866F6C689 /* WSFListControllerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFListControllerHeader.h; path = WSFKits/WSFListController/WSFListControllerHeader.h; sourceTree = "<group>"; };
-		3A1BD3F56132575A779C1A9FA6B5690E /* WSFTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFTimer.h; path = WSFKits/Classes/WSFTimer.h; sourceTree = "<group>"; };
 		3C64867EE8432294664327FDFA6282E2 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
 		40E52D89F99A647397A6D4FFECBB72DB /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		40FC9B3802139C609A16F5FDBFE4DB28 /* Pods-WSFKits_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +147,7 @@
 		43D8F9985B4625722E843D347A591E6E /* UIViewController+WSFListExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+WSFListExtension.m"; path = "WSFKits/WSFListController/UIViewController+WSFListExtension.m"; sourceTree = "<group>"; };
 		4505DF9CD8B60B320ADDBD4EF8F2FC39 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
 		47E665642AB5CDFCFE0CE69DA6E35213 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
-		47F7E70759030569804C0CF9CC98F28C /* WSFKits.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WSFKits.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		47F7E70759030569804C0CF9CC98F28C /* WSFKits.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WSFKits.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4B6F931AE63F5D834ED709F51DA5299A /* WSFKits.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WSFKits.xcconfig; sourceTree = "<group>"; };
 		4C6F24198A2382340FDDEB788CA9F654 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
 		53FB6C27E5598E0FEABB2C4E9C20DE50 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
@@ -173,16 +172,15 @@
 		891687C8494BBFFC0CC5B204BA09912A /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		89B6DCD69FD03421028DD841C07CE167 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		8CCC0456CA2233617E6BAAA665F0CADB /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
-		8DD1F52B9234973A5EFB438AE73C907D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8DD1F52B9234973A5EFB438AE73C907D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8EBEE7B11633C99C71AF9D09C375AE8D /* WSFKits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFKits.h; path = WSFKits/WSFKits.h; sourceTree = "<group>"; };
-		8F98E0CF6FB239D988A9519E42BDBB78 /* WSFTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WSFTimer.m; path = WSFKits/Classes/WSFTimer.m; sourceTree = "<group>"; };
 		908274D9050BDA346645C66A7BD33298 /* NSString+WSFExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+WSFExtension.h"; path = "WSFKits/Categories/NSString+WSFExtension.h"; sourceTree = "<group>"; };
 		915A254236AA9897E02DB84965F4C90C /* Pods-WSFKits_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		95562B18EA814616982651AC71ED6BBF /* WSFKits.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WSFKits.modulemap; sourceTree = "<group>"; };
 		95D401AEA6D6128909A18591516131C3 /* MJRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJRefresh-Info.plist"; sourceTree = "<group>"; };
 		986847E7CB2A58D3B86B7FDC8B754C42 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
-		9D32089DF73C06690291D9CD688E4A34 /* Pods_WSFKits_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WSFKits_Example.framework; path = "Pods-WSFKits_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D32089DF73C06690291D9CD688E4A34 /* Pods_WSFKits_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSFKits_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA30E27F24674583FC6AD1A763BB3AC /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
 		9F7A347D6F1A50D5706CF1190153922D /* Pods-WSFKits_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSFKits_Example.modulemap"; sourceTree = "<group>"; };
 		AADD9B1148E84E7E836BDEF0DAD8D260 /* WSFKits-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSFKits-prefix.pch"; sourceTree = "<group>"; };
@@ -190,7 +188,7 @@
 		B1E8D226D41F516275B068284EE36584 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
 		B3C28E97B6AD9A3628427FC0CD48F41E /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		B60E81E61044F1FD8AEED0971AE81949 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
-		B6BA6212CBB483D6D1541419CADE1011 /* Pods_WSFKits_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WSFKits_Tests.framework; path = "Pods-WSFKits_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BA6212CBB483D6D1541419CADE1011 /* Pods_WSFKits_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSFKits_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6F4549BDA6CA71A100294AD9FED6DF /* NSArray+WSFExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+WSFExtension.m"; path = "WSFKits/Categories/NSArray+WSFExtension.m"; sourceTree = "<group>"; };
 		BB7D26A3DE9D1C7296DC72CEFF24891E /* UIImage+WSFExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WSFExtension.m"; path = "WSFKits/Categories/UIImage+WSFExtension.m"; sourceTree = "<group>"; };
 		BCEF931341B659DFAB1CF13ACC9B777E /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -211,7 +209,9 @@
 		D447DB2AD2D8F643988CE44C6B064B02 /* WSFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFConstants.h; path = WSFKits/Constants/WSFConstants.h; sourceTree = "<group>"; };
 		D50E3809AE59DCFCB3C9E52FF4346FF4 /* UIViewController+WSFListExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+WSFListExtension.h"; path = "WSFKits/WSFListController/UIViewController+WSFListExtension.h"; sourceTree = "<group>"; };
 		DEE2D2AA34874E92D25A0FA3FECA93A1 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C3299A25187EDF0066DD83 /* WSFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSFTimer.m; path = WSFKits/Categories/WSFTimer.m; sourceTree = "<group>"; };
+		E0C3299B25187EDF0066DD83 /* WSFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSFTimer.h; path = WSFKits/Categories/WSFTimer.h; sourceTree = "<group>"; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E739CFF6E1B4FA3FA0351934D0F8089B /* Pods-WSFKits_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSFKits_Tests-umbrella.h"; sourceTree = "<group>"; };
 		ECC5D31063F07185FBD63BA03F70AD85 /* UIView+WSFExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WSFExtension.h"; path = "WSFKits/Categories/UIView+WSFExtension.h"; sourceTree = "<group>"; };
 		EEE5E746C82DB2876BB55C1ACAB5E12F /* NSArray+WSFExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+WSFExtension.h"; path = "WSFKits/Categories/NSArray+WSFExtension.h"; sourceTree = "<group>"; };
@@ -327,15 +327,6 @@
 			path = "../Target Support Files/MJRefresh";
 			sourceTree = "<group>";
 		};
-		5D6CFA323E1084E703E3D27A35AB7CDD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3A1BD3F56132575A779C1A9FA6B5690E /* WSFTimer.h */,
-				8F98E0CF6FB239D988A9519E42BDBB78 /* WSFTimer.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		67A282FB4B0C4B581A48895887E12BD8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +347,8 @@
 		71F3222A0737F097DB7E3D81E1EDD7C2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				E0C3299B25187EDF0066DD83 /* WSFTimer.h */,
+				E0C3299A25187EDF0066DD83 /* WSFTimer.m */,
 				EEE5E746C82DB2876BB55C1ACAB5E12F /* NSArray+WSFExtension.h */,
 				BA6F4549BDA6CA71A100294AD9FED6DF /* NSArray+WSFExtension.m */,
 				07453FB24D1A034E58A9904F4573D4C7 /* NSDictionary+WSFExtension.h */,
@@ -460,7 +453,6 @@
 				89466F6BF4004EF6F04FA4ECA293B9D8 /* Resources */,
 				37590D19E954E914DEB3B41771F932A7 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -469,7 +461,6 @@
 			children = (
 				8EBEE7B11633C99C71AF9D09C375AE8D /* WSFKits.h */,
 				71F3222A0737F097DB7E3D81E1EDD7C2 /* Categories */,
-				5D6CFA323E1084E703E3D27A35AB7CDD /* Classes */,
 				EEBD68B815C9BD9AD34C73C87CA868F9 /* Constants */,
 				9B3CC9CEB6351878E660D277B2CCB0FC /* Pod */,
 				2E823798E377D159ECB03206888B0B65 /* Support Files */,
@@ -542,8 +533,8 @@
 				97A6AF9A296240F67248F14CCAEC18E6 /* WSFKits-umbrella.h in Headers */,
 				77E8704DFA998F4AF3D0920911AF963B /* WSFKits.h in Headers */,
 				67C80F929BE937E1E55E4193ACF534C1 /* WSFLayoutConstants.h in Headers */,
+				E0C3299D25187EDF0066DD83 /* WSFTimer.h in Headers */,
 				92102BA1F08E527053FDAAEBE8675080 /* WSFListControllerHeader.h in Headers */,
-				36580D00977DA29F6F1BC17735E1C2FF /* WSFTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,8 +773,8 @@
 				8F65474F95DA8994275C53FAF910FC37 /* UILabel+WSFExtension.m in Sources */,
 				88148EF591D580BCA9464E57A2DA98AF /* UIView+WSFExtension.m in Sources */,
 				8AA839FB5405576C3D38429ACD679EBA /* UIViewController+WSFListExtension.m in Sources */,
+				E0C3299C25187EDF0066DD83 /* WSFTimer.m in Sources */,
 				531CB0E022BECAFF2B5ECA81652E1C9B /* WSFKits-dummy.m in Sources */,
-				2974F9565EE03920864F9D2493B1ECDE /* WSFTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,8 +966,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
