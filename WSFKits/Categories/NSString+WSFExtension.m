@@ -46,6 +46,37 @@
     return [self substringWithRange:NSMakeRange(self.length-count, count)];
 }
 
+-(NSString *)wsf_filterHTML
+{
+    NSString *html = self.copy;
+    NSScanner * scanner = [NSScanner scannerWithString:self];
+    NSString * text = nil;
+    while([scanner isAtEnd]==NO)
+    {
+        //找到标签的起始位置
+        [scanner scanUpToString:@"<" intoString:nil];
+        //找到标签的结束位置
+        [scanner scanUpToString:@">" intoString:&text];
+        //替换字符
+        html = [html stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@>",text] withString:@""];
+    }
+    NSString * regEx = @"<([^>]*)>";
+    html = [html stringByReplacingOccurrencesOfString:regEx withString:@""];
+    html = [html stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "];
+    return html;
+}
+
+- (NSDictionary *)wsf_dictionary {
+    NSData *webData = [self dataUsingEncoding:NSUTF8StringEncoding ];
+    NSError *error;
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:webData options:0 error:&error];
+    if (error) {
+        NSLog(@"%@",error.domain);
+    }
+    return jsonDict;
+}
+
+
 
 
 

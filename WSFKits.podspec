@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WSFKits'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'WSFKits.'
 
 # This description is used to generate tags and improve search results.
@@ -40,6 +40,12 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '>= 2.3'
   # s.dependency 'MJRefresh', '>= 3.1.12'
+
+  s.subspec 'Classes' do |ss|
+    ss.dependency 'WSFKits/Categories'
+    ss.source_files = 'WSFKits/Classes/**/*'
+  end
+
   s.subspec 'Constants' do |ss|
     ss.source_files = 'WSFKits/Constants/**/*'
   end

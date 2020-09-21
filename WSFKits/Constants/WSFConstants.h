@@ -82,4 +82,7 @@ return _##propertyname;   \
 #define AddSelfObserver(selName,ntfName) [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selName) name:ntfName object:nil]
 #define RemoveSelfObserver [[NSNotificationCenter defaultCenter]removeObserver:self]
 
+#define WSFStringFromClass(name) NSStringFromClass([name class])
+#define WSFTableRegisterClass(table, name) [table registerClass:[name class] forCellReuseIdentifier:NSStringFromClass([name class])];
+
 #endif /* WSFConstants_h */

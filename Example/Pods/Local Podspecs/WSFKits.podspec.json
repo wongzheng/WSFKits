@@ -1,6 +1,6 @@
 {
   "name": "WSFKits",
-  "version": "0.1.1",
+  "version": "0.2.5",
   "summary": "WSFKits.",
   "description": "Add long description of the pod here.",
   "homepage": "https://github.com/wongzheng/WSFKits",
@@ -13,13 +13,17 @@
   },
   "source": {
     "git": "https://github.com/wongzheng/WSFKits.git",
-    "tag": "0.1.1"
+    "tag": "0.2.5"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "WSFKits/WSFKits.h",
   "subspecs": [
+    {
+      "name": "Classes",
+      "source_files": "WSFKits/Classes/**/*"
+    },
     {
       "name": "Constants",
       "source_files": "WSFKits/Constants/**/*"
@@ -27,6 +31,15 @@
     {
       "name": "Categories",
       "source_files": "WSFKits/Categories/**/*"
+    },
+    {
+      "name": "WSFListController",
+      "source_files": "WSFKits/WSFListController/**/*",
+      "dependencies": {
+        "MJRefresh": [
+          ">= 3.1.12"
+        ]
+      }
     }
   ]
 }

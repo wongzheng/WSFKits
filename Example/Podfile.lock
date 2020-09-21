@@ -1,20 +1,31 @@
 PODS:
-  - WSFKits (0.1.1):
-    - WSFKits/Categories (= 0.1.1)
-    - WSFKits/Constants (= 0.1.1)
-  - WSFKits/Categories (0.1.1)
-  - WSFKits/Constants (0.1.1)
+  - MJRefresh (3.4.1)
+  - WSFKits (0.2.5):
+    - WSFKits/Categories (= 0.2.5)
+    - WSFKits/Classes (= 0.2.5)
+    - WSFKits/Constants (= 0.2.5)
+    - WSFKits/WSFListController (= 0.2.5)
+  - WSFKits/Categories (0.2.5)
+  - WSFKits/Classes (0.2.5)
+  - WSFKits/Constants (0.2.5)
+  - WSFKits/WSFListController (0.2.5):
+    - MJRefresh (>= 3.1.12)
 
 DEPENDENCIES:
   - WSFKits (from `../`)
 
+SPEC REPOS:
+  trunk:
+    - MJRefresh
+
 EXTERNAL SOURCES:
   WSFKits:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  WSFKits: 66ea4df18b9793bad5514e529e99a661f36a86af
+  MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
+  WSFKits: fe7656607421b2710bc8e1eb2d76b2600123500c
 
-PODFILE CHECKSUM: 3ed668ebb26874fbf989eb072701c2553257f859
+PODFILE CHECKSUM: 16eee883c399e94c6d61e8efe340da26694718e7
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.8.4

@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
+#define WSF_HourTimeInterval (3600)
+#define WSF_DayTimeInterval (24 * WSF_HourTimeInterval)
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (WSFExtension)
@@ -19,7 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)weekDay;
 
 - (NSString *)endingSubstringWithCount:(NSInteger)count;
+/**
+ * 清除html标签
+ */
+- (NSString *)wsf_filterHTML;
 
+- (NSDictionary *)wsf_dictionary;
 
 
 @end
