@@ -10,7 +10,6 @@
 
 #import "WSFConstants.h"
 #import "WSFCategories.h"
-#import "WSFListControllerHeader.h"
-
+#import "WSFCrashDefender.h"
 
 #endif /* WSFKits_h */

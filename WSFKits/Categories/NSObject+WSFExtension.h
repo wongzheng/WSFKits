@@ -10,7 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (WSFExtension)
+
 - (BOOL)isValuable;
+
++ (void)wsf_SwizzlingClassMethod:(SEL)originalSelector withMethod:(SEL)swizzledSelector;
++ (void)wsf_SwizzlingInstanceMethod:(SEL)originalSelector withMethod:(SEL)swizzledSelector;
++ (void)getAllMethod;
 @end
 
 NS_ASSUME_NONNULL_END

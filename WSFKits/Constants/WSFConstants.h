@@ -85,4 +85,24 @@ return _##propertyname;   \
 #define WSFStringFromClass(name) NSStringFromClass([name class])
 #define WSFTableRegisterClass(table, name) [table registerClass:[name class] forCellReuseIdentifier:NSStringFromClass([name class])];
 
+
+// 信号量
+#ifndef WSF_LOCK
+#define WSF_LOCK(lock) dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+#endif
+
+#ifndef WSF_UNLOCK
+#define WSF_UNLOCK(lock) dispatch_semaphore_signal(lock);
+#endif
+
+#define WSFSemaphoreCreate \
+static dispatch_semaphore_t signalSemaphore; \
+static dispatch_once_t onceTokenSemaphore; \
+dispatch_once(&onceTokenSemaphore, ^{ \
+    signalSemaphore = dispatch_semaphore_create(1); \
+});
+
+#define WSFSemaphoreWait WSF_LOCK(signalSemaphore)
+#define WSFSemaphoreSignal WSF_UNLOCK(signalSemaphore)
+
 #endif /* WSFConstants_h */

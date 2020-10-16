@@ -22,7 +22,6 @@
 		4055A0ACF4681DEA04E2F0AECD0B97B2 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7108FD20B2118B93A5C461C4423CCD /* UIScrollView+MJRefresh.m */; };
 		40EE4CE034E2DCAB658DA35814ACDE4B /* NSDictionary+WSFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 07453FB24D1A034E58A9904F4573D4C7 /* NSDictionary+WSFExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45626116C19AA54A2359E85DAEB5AD42 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA55D45BA6B9C83E4699FE0E8DEACC5 /* UIScrollView+MJExtension.m */; };
-		457CA30593B04E6A71D8022A048CEE3B /* UIViewController+WSFListExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D50E3809AE59DCFCB3C9E52FF4346FF4 /* UIViewController+WSFListExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4583409C21FCF11CB11FE51B0B235A00 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B0115A7F6FE73BD0E1BFF3C98DC1CC /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47C5E12941194A00ED65EECCD1E4B9C3 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A839F0EADCBB600C087682AD7319A /* MJRefreshComponent.m */; };
 		4F5A97CA16447E2BDF919A40C1652E9F /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5635EB63B3E7082C9B773915DF7916C7 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,11 +49,9 @@
 		871BA21E0152A233F4550114F70A564C /* NSObject+WSFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA895F9B1A7A90185C2320394EF96DA /* NSObject+WSFExtension.m */; };
 		88148EF591D580BCA9464E57A2DA98AF /* UIView+WSFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 604A129ADE0200BF25EBFF6073B62681 /* UIView+WSFExtension.m */; };
 		89407BE103B6AA73E90C8E0EF0C1AA08 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C01806311753BBD1566327C4DEE24ED1 /* MJRefreshAutoGifFooter.m */; };
-		8AA839FB5405576C3D38429ACD679EBA /* UIViewController+WSFListExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F9985B4625722E843D347A591E6E /* UIViewController+WSFListExtension.m */; };
 		8DE42BD4851B82D5D7CBABA072173E8C /* WSFCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DE8903675C55C86D585AADE2DABF0C /* WSFCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F65474F95DA8994275C53FAF910FC37 /* UILabel+WSFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 546B8B751D28E3EE658EA9161B2F4591 /* UILabel+WSFExtension.m */; };
 		8F736DFA1256E8BE2DCC41F66F2A2561 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F24198A2382340FDDEB788CA9F654 /* MJRefreshHeader.m */; };
-		92102BA1F08E527053FDAAEBE8675080 /* WSFListControllerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F6400FABF432996EE3A28866F6C689 /* WSFListControllerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94940A2C852223F20EE7ED83A9BB5179 /* MJRefreshConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F05FC6D3735D6F1084FD0F6C0CBE9E41 /* MJRefreshConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95BD9ECE799ABE9F7F41DB1D4F44DE31 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = C9088961625A2E95C39C61E197605A7A /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97A6AF9A296240F67248F14CCAEC18E6 /* WSFKits-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 813F6D89BD847BC2589F24E3ED4E11B2 /* WSFKits-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,6 +73,16 @@
 		D74F9EC34733AA4850B4EFAB7518614B /* Pods-WSFKits_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5557AD93C4C66900EAD0E5DB7A4CF59C /* Pods-WSFKits_Tests-dummy.m */; };
 		D8328429281E82F67DB47AF6C9D95191 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C13D16523502D6EB4FFEE319329B79CD /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCCC7E7E734A732901932B2E9D662EE7 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F444D8A07B8B7689021A4F1468B40901 /* MJRefreshAutoStateFooter.m */; };
+		E072673B25398F2300FEFA58 /* NSMutableArray+WSFCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = E072673125398F2300FEFA58 /* NSMutableArray+WSFCrash.h */; };
+		E072673C25398F2300FEFA58 /* NSObject+WSFCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = E072673225398F2300FEFA58 /* NSObject+WSFCrash.h */; };
+		E072673D25398F2300FEFA58 /* WSFCrashDefender.h in Headers */ = {isa = PBXBuildFile; fileRef = E072673325398F2300FEFA58 /* WSFCrashDefender.h */; };
+		E072673E25398F2300FEFA58 /* WSFUncaughtExceptionDefender.h in Headers */ = {isa = PBXBuildFile; fileRef = E072673425398F2300FEFA58 /* WSFUncaughtExceptionDefender.h */; };
+		E072673F25398F2300FEFA58 /* NSArray+WSFCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = E072673525398F2300FEFA58 /* NSArray+WSFCrash.m */; };
+		E072674025398F2300FEFA58 /* NSMutableArray+WSFCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = E072673625398F2300FEFA58 /* NSMutableArray+WSFCrash.m */; };
+		E072674125398F2300FEFA58 /* WSFUncaughtExceptionDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E072673725398F2300FEFA58 /* WSFUncaughtExceptionDefender.m */; };
+		E072674225398F2300FEFA58 /* WSFCrashDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E072673825398F2300FEFA58 /* WSFCrashDefender.m */; };
+		E072674325398F2300FEFA58 /* NSObject+WSFCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = E072673925398F2300FEFA58 /* NSObject+WSFCrash.m */; };
+		E072674425398F2300FEFA58 /* NSArray+WSFCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = E072673A25398F2300FEFA58 /* NSArray+WSFCrash.h */; };
 		E0C3299C25187EDF0066DD83 /* WSFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C3299A25187EDF0066DD83 /* WSFTimer.m */; };
 		E0C3299D25187EDF0066DD83 /* WSFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C3299B25187EDF0066DD83 /* WSFTimer.h */; };
 		EB209DF5DE13F4D802DA1BE20A9CEBD2 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E8D226D41F516275B068284EE36584 /* MJRefreshBackStateFooter.m */; };
@@ -139,12 +146,10 @@
 		338F9FA7CB032D7FEC6FFC389E9B24F3 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B0115A7F6FE73BD0E1BFF3C98DC1CC /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
 		36DE8903675C55C86D585AADE2DABF0C /* WSFCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFCategories.h; path = WSFKits/Categories/WSFCategories.h; sourceTree = "<group>"; };
-		39F6400FABF432996EE3A28866F6C689 /* WSFListControllerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFListControllerHeader.h; path = WSFKits/WSFListController/WSFListControllerHeader.h; sourceTree = "<group>"; };
 		3C64867EE8432294664327FDFA6282E2 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
 		40E52D89F99A647397A6D4FFECBB72DB /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		40FC9B3802139C609A16F5FDBFE4DB28 /* Pods-WSFKits_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WSFKits_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4289644DD5979DA7276F3799CA03225F /* Pods-WSFKits_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WSFKits_Example-umbrella.h"; sourceTree = "<group>"; };
-		43D8F9985B4625722E843D347A591E6E /* UIViewController+WSFListExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+WSFListExtension.m"; path = "WSFKits/WSFListController/UIViewController+WSFListExtension.m"; sourceTree = "<group>"; };
 		4505DF9CD8B60B320ADDBD4EF8F2FC39 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
 		47E665642AB5CDFCFE0CE69DA6E35213 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
 		47F7E70759030569804C0CF9CC98F28C /* WSFKits.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WSFKits.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -207,8 +212,17 @@
 		CE60688C7C33C28AEC8305264C6F7896 /* Pods-WSFKits_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WSFKits_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D0505B41961B81CF230C862864368C92 /* Pods-WSFKits_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WSFKits_Tests.modulemap"; sourceTree = "<group>"; };
 		D447DB2AD2D8F643988CE44C6B064B02 /* WSFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WSFConstants.h; path = WSFKits/Constants/WSFConstants.h; sourceTree = "<group>"; };
-		D50E3809AE59DCFCB3C9E52FF4346FF4 /* UIViewController+WSFListExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+WSFListExtension.h"; path = "WSFKits/WSFListController/UIViewController+WSFListExtension.h"; sourceTree = "<group>"; };
 		DEE2D2AA34874E92D25A0FA3FECA93A1 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		E072673125398F2300FEFA58 /* NSMutableArray+WSFCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WSFCrash.h"; sourceTree = "<group>"; };
+		E072673225398F2300FEFA58 /* NSObject+WSFCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WSFCrash.h"; sourceTree = "<group>"; };
+		E072673325398F2300FEFA58 /* WSFCrashDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFCrashDefender.h; sourceTree = "<group>"; };
+		E072673425398F2300FEFA58 /* WSFUncaughtExceptionDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFUncaughtExceptionDefender.h; sourceTree = "<group>"; };
+		E072673525398F2300FEFA58 /* NSArray+WSFCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WSFCrash.m"; sourceTree = "<group>"; };
+		E072673625398F2300FEFA58 /* NSMutableArray+WSFCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WSFCrash.m"; sourceTree = "<group>"; };
+		E072673725398F2300FEFA58 /* WSFUncaughtExceptionDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFUncaughtExceptionDefender.m; sourceTree = "<group>"; };
+		E072673825398F2300FEFA58 /* WSFCrashDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFCrashDefender.m; sourceTree = "<group>"; };
+		E072673925398F2300FEFA58 /* NSObject+WSFCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WSFCrash.m"; sourceTree = "<group>"; };
+		E072673A25398F2300FEFA58 /* NSArray+WSFCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WSFCrash.h"; sourceTree = "<group>"; };
 		E0C3299A25187EDF0066DD83 /* WSFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSFTimer.m; path = WSFKits/Categories/WSFTimer.m; sourceTree = "<group>"; };
 		E0C3299B25187EDF0066DD83 /* WSFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSFTimer.h; path = WSFKits/Categories/WSFTimer.h; sourceTree = "<group>"; };
 		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -459,15 +473,33 @@
 		DEC30F65FF2407AE709F8DAA4C22D11B /* WSFKits */ = {
 			isa = PBXGroup;
 			children = (
+				E072673025398F2300FEFA58 /* Crash */,
 				8EBEE7B11633C99C71AF9D09C375AE8D /* WSFKits.h */,
 				71F3222A0737F097DB7E3D81E1EDD7C2 /* Categories */,
 				EEBD68B815C9BD9AD34C73C87CA868F9 /* Constants */,
 				9B3CC9CEB6351878E660D277B2CCB0FC /* Pod */,
 				2E823798E377D159ECB03206888B0B65 /* Support Files */,
-				FDE0ADF7B0B26787F8E8EFCC9D409BFE /* WSFListController */,
 			);
 			name = WSFKits;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		E072673025398F2300FEFA58 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				E072673325398F2300FEFA58 /* WSFCrashDefender.h */,
+				E072673825398F2300FEFA58 /* WSFCrashDefender.m */,
+				E072673225398F2300FEFA58 /* NSObject+WSFCrash.h */,
+				E072673925398F2300FEFA58 /* NSObject+WSFCrash.m */,
+				E072673125398F2300FEFA58 /* NSMutableArray+WSFCrash.h */,
+				E072673625398F2300FEFA58 /* NSMutableArray+WSFCrash.m */,
+				E072673A25398F2300FEFA58 /* NSArray+WSFCrash.h */,
+				E072673525398F2300FEFA58 /* NSArray+WSFCrash.m */,
+				E072673425398F2300FEFA58 /* WSFUncaughtExceptionDefender.h */,
+				E072673725398F2300FEFA58 /* WSFUncaughtExceptionDefender.m */,
+			);
+			name = Crash;
+			path = WSFKits/Crash;
 			sourceTree = "<group>";
 		};
 		E7F2BA4BE856F2936B59D4593B7280DA /* Pods-WSFKits_Tests */ = {
@@ -503,16 +535,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FDE0ADF7B0B26787F8E8EFCC9D409BFE /* WSFListController */ = {
-			isa = PBXGroup;
-			children = (
-				D50E3809AE59DCFCB3C9E52FF4346FF4 /* UIViewController+WSFListExtension.h */,
-				43D8F9985B4625722E843D347A591E6E /* UIViewController+WSFListExtension.m */,
-				39F6400FABF432996EE3A28866F6C689 /* WSFListControllerHeader.h */,
-			);
-			name = WSFListController;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -522,19 +544,22 @@
 			files = (
 				CB26F92B250F33316A73924F1463A38C /* NSArray+WSFExtension.h in Headers */,
 				40EE4CE034E2DCAB658DA35814ACDE4B /* NSDictionary+WSFExtension.h in Headers */,
+				E072674425398F2300FEFA58 /* NSArray+WSFCrash.h in Headers */,
 				36D160E73A81473F44B1AE677430190C /* NSObject+WSFExtension.h in Headers */,
+				E072673B25398F2300FEFA58 /* NSMutableArray+WSFCrash.h in Headers */,
 				7C70B733C9986F125C650B8F6A897E33 /* NSString+WSFExtension.h in Headers */,
 				FDE7C70BA9BA10C68DBECBEB9B68342E /* UIImage+WSFExtension.h in Headers */,
+				E072673D25398F2300FEFA58 /* WSFCrashDefender.h in Headers */,
 				1CD4B6949D43BEBE03016C6BF2AC0008 /* UILabel+WSFExtension.h in Headers */,
 				5CC281AFE7F86E71E3A1A2BC5195B8AE /* UIView+WSFExtension.h in Headers */,
-				457CA30593B04E6A71D8022A048CEE3B /* UIViewController+WSFListExtension.h in Headers */,
+				E072673C25398F2300FEFA58 /* NSObject+WSFCrash.h in Headers */,
 				8DE42BD4851B82D5D7CBABA072173E8C /* WSFCategories.h in Headers */,
 				D17CF5F772BDE20C48E4B577E4E80DCD /* WSFConstants.h in Headers */,
+				E072673E25398F2300FEFA58 /* WSFUncaughtExceptionDefender.h in Headers */,
 				97A6AF9A296240F67248F14CCAEC18E6 /* WSFKits-umbrella.h in Headers */,
 				77E8704DFA998F4AF3D0920911AF963B /* WSFKits.h in Headers */,
 				67C80F929BE937E1E55E4193ACF534C1 /* WSFLayoutConstants.h in Headers */,
 				E0C3299D25187EDF0066DD83 /* WSFTimer.h in Headers */,
-				92102BA1F08E527053FDAAEBE8675080 /* WSFListControllerHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,14 +790,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E072674125398F2300FEFA58 /* WSFUncaughtExceptionDefender.m in Sources */,
 				038FD81B11245AA3181E2CC6760D6001 /* NSArray+WSFExtension.m in Sources */,
 				66590AFC0BA6D77BD197E37DE57638CB /* NSDictionary+WSFExtension.m in Sources */,
 				871BA21E0152A233F4550114F70A564C /* NSObject+WSFExtension.m in Sources */,
+				E072673F25398F2300FEFA58 /* NSArray+WSFCrash.m in Sources */,
 				B406ABD40E0F6214CFCC032979D1077B /* NSString+WSFExtension.m in Sources */,
 				7CF4E8D94CBD836D63359EC1B5EBBF51 /* UIImage+WSFExtension.m in Sources */,
+				E072674025398F2300FEFA58 /* NSMutableArray+WSFCrash.m in Sources */,
+				E072674225398F2300FEFA58 /* WSFCrashDefender.m in Sources */,
 				8F65474F95DA8994275C53FAF910FC37 /* UILabel+WSFExtension.m in Sources */,
+				E072674325398F2300FEFA58 /* NSObject+WSFCrash.m in Sources */,
 				88148EF591D580BCA9464E57A2DA98AF /* UIView+WSFExtension.m in Sources */,
-				8AA839FB5405576C3D38429ACD679EBA /* UIViewController+WSFListExtension.m in Sources */,
 				E0C3299C25187EDF0066DD83 /* WSFTimer.m in Sources */,
 				531CB0E022BECAFF2B5ECA81652E1C9B /* WSFKits-dummy.m in Sources */,
 			);
@@ -866,15 +895,16 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MJRefresh/MJRefresh-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
 				PRODUCT_MODULE_NAME = MJRefresh;
 				PRODUCT_NAME = MJRefresh;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1149,15 +1179,16 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MJRefresh/MJRefresh-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
 				PRODUCT_MODULE_NAME = MJRefresh;
 				PRODUCT_NAME = MJRefresh;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
