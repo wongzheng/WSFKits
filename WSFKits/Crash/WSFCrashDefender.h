@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WSFCrashDefender : NSObject
 
 /**
- * shieldAll = holdRuntimeCrash + holdUncaughtException
+ * shield = holdRuntimeCrash + holdUncaughtException
  *
  */
-+ (void)shieldAll;
++ (void)shield;
 /*
  * Hold Normal Runtime Crash
  * unrecognized selector

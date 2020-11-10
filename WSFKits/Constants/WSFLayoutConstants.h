@@ -14,13 +14,17 @@
 
 #define StandardScreenNum(num)    (ScreenWidth / 375.0f * num)
 
-//iPhoneX / iPhoneXS
-#define  isIphoneX_XS     (ScreenWidth == 375.f && ScreenHeight == 812.f ? YES : NO)
-//iPhoneXR / iPhoneXSMax
-#define  isIphoneXR_XSMax    (ScreenWidth == 414.f && ScreenHeight == 896.f ? YES : NO)
 //异性全面屏
-#define   isFullScreenDevice    (isIphoneX_XS || isIphoneXR_XSMax)
-
+#define   isFullScreenDevice    ({\
+BOOL isiPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+UIWindow *window = [UIApplication sharedApplication].delegate.window;\
+if (window.safeAreaInsets.bottom > 0.0) {\
+isiPhoneX = YES;\
+}\
+}\
+isiPhoneX;\
+})
 
 
 // Status bar height.

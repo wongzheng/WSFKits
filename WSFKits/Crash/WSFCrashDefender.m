@@ -11,7 +11,7 @@
 
 @implementation WSFCrashDefender
 
-+ (void)shieldAll {
++ (void)shield {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self holdRuntimeCrash];

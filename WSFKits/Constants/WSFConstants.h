@@ -72,6 +72,15 @@ _##propertyname = propertyname;   \
 }   \
 return _##propertyname;   \
 }
+
+// 随机颜色
+#define WSFRandomColor ({\
+int red = rand() % 256;\
+int green = rand() % 256;\
+int blur = rand() % 256;\
+[UIColor colorWithRed:(red / 255.0f) green:(green / 255.0f) blue:(blur / 255.0f) alpha:1.0f];\
+})
+
 // ImageNamed
 /* 直接填写图片名称，不用加@"" */
 #define ImageName(name) [UIImage imageNamed:@(#name)]

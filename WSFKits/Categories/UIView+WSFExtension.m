@@ -6,8 +6,32 @@
 //
 
 #import "UIView+WSFExtension.h"
+#import "NSObject+WSFExtension.h"
+#import <objc/runtime.h>
+
+@interface WSFCornerModel : NSObject
+
+@property (nonatomic, assign) CGFloat radius;
+@property (nonatomic, assign) UIRectCorner corner;
+
+@end
+
+@implementation WSFCornerModel @end
+
+@interface UIView()
+
+@property (nonatomic, strong) WSFCornerModel *cornerModel;
+
+@end
 
 @implementation UIView (WSFExtension)
+
++(void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self wsf_SwizzlingInstanceMethod:@selector(layoutSubviews) withMethod:@selector(wsf_layoutSubviews)];
+    });
+}
 
 - (BOOL)isShown {
     return !self.isHidden;
@@ -34,8 +58,7 @@
 
 - (void)setCornerRadius:(CGFloat)radius
 {
-    self.layer.masksToBounds = YES;
-    self.layer.cornerRadius = radius;
+    [self bezierCornerWithRadius:radius corner:UIRectCornerAllCorners];
 }
 
 - (void)setBorderWidth:(CGFloat)width color:(UIColor *)color
@@ -76,6 +99,49 @@
     shapeLayer.path = bezierPath.CGPath;
     shapeLayer.lineWidth = borderWidth;
     return shapeLayer;
+}
+
+- (CGFloat)width_wsf {
+    return self.frame.size.width;
+}
+
+- (CGFloat)height_wsf {
+    return self.frame.size.height;
+}
+
+- (CGFloat)x_wsf {
+    return self.frame.origin.x;
+}
+
+- (CGFloat)y_wsf {
+    return self.frame.origin.y;
+}
+
+- (void)bezierCornerWithRadius:(CGFloat)radius corner:(UIRectCorner)corner {
+    WSFCornerModel *model = [WSFCornerModel new];
+    model.radius = radius;
+    model.corner = corner;
+    self.cornerModel = model;
+}
+
+- (void)wsf_layoutSubviews {
+    WSFCornerModel *model = self.cornerModel;
+    if (model) {
+        UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:model.corner cornerRadii:CGSizeMake(model.radius, model.radius)];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = self.bounds;
+        maskLayer.path = path.CGPath;
+        self.layer.mask = maskLayer;
+    }
+    [self wsf_layoutSubviews];
+}
+
+- (WSFCornerModel *)cornerModel{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setCornerModel:(WSFCornerModel *)cornerModel {
+    objc_setAssociatedObject(self, @selector(cornerModel), cornerModel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

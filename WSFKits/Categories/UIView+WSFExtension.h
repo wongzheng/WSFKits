@@ -44,6 +44,13 @@ UIBorderSideTypeRight = 1 << 3,
  */
 - (UIView *)borderForColor:(UIColor *)color borderWidth:(CGFloat)borderWidth borderType:(UIBorderSideType)borderType;
 
+- (CGFloat)width_wsf;
+- (CGFloat)height_wsf;
+- (CGFloat)x_wsf;
+- (CGFloat)y_wsf;
+
+- (void)bezierCornerWithRadius:(CGFloat)radius corner:(UIRectCorner)corner;
+
 @end
 
 NS_ASSUME_NONNULL_END
