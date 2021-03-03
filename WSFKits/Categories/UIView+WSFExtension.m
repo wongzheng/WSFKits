@@ -58,7 +58,9 @@
 
 - (void)setCornerRadius:(CGFloat)radius
 {
-    [self bezierCornerWithRadius:radius corner:UIRectCornerAllCorners];
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = radius;
+//    [self bezierCornerWithRadius:radius corner:UIRectCornerAllCorners];
 }
 
 - (void)setBorderWidth:(CGFloat)width color:(UIColor *)color

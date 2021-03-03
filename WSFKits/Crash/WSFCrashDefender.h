@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)holdRuntimeCrash;
 + (void)holdUncaughtException;
 
++ (void)realQuit;
+
 @end
 
 NS_ASSUME_NONNULL_END

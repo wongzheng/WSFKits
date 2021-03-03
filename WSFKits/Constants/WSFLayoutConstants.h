@@ -33,6 +33,8 @@ isiPhoneX;\
 // Navigation bar height.
 #define  NavigationBarHeight  44.f
 
+#define FullScreenBangsHeight (isFullScreenDevice ? 24.f : 0.f)
+
 // Tabbar height.
 #define  TabbarHeight         (isFullScreenDevice ? (49.f+34.f) : 49.f)
 

@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** 使用高斯模糊的方式重绘图片 */
 - (UIImage *)blurryImageWithBlurLevel:(CGFloat)blur;
 
++ (UIImage *)grayImage:( UIImage *)sourceImage;
+
 @end
 
 NS_ASSUME_NONNULL_END

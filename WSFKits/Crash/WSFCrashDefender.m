@@ -10,6 +10,9 @@
 #import "WSFUncaughtExceptionDefender.h"
 
 @implementation WSFCrashDefender
++ (void)realQuit {
+    [WSFUncaughtExceptionDefender realQuit];
+}
 
 + (void)shield {
     static dispatch_once_t onceToken;

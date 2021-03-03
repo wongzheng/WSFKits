@@ -9,8 +9,10 @@
 #import "WSFConstants.h"
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
+#include <sys/signal.h>
 
 static BOOL dismissed;
+static BOOL quit;
 static NSUncaughtExceptionHandler *otherHandler = nil;
 
 volatile int32_t UncaughtExceptionCount = 0;
@@ -24,6 +26,10 @@ NSString * const UncaughtExceptionHandlerSignalKey = @"UncaughtExceptionHandlerS
 NSString * const UncaughtExceptionHandlerAddressesKey = @"UncaughtExceptionHandlerAddressesKey";
 
 @implementation WSFUncaughtExceptionDefender
+
++ (void)realQuit {
+    kill(getpid(), 9);
+}
 
 + (void)shield {
     static dispatch_once_t onceToken;
@@ -40,17 +46,22 @@ NSString * const UncaughtExceptionHandlerAddressesKey = @"UncaughtExceptionHandl
 }
 
 + (void)showLogWithException:(NSException *)exception {
+    quit = YES;
+    dismissed = NO;
+    CFRunLoopRef runLoop = CFRunLoopGetCurrent();
+    CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"程序遇到了未知错误即将崩溃！" message:@"错误代码：9527" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             dismissed = YES;
     }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"忽略" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        dismissed = YES;
+        quit = NO;
+    }]];
     UIViewController *currentVC = [UIApplication sharedApplication].delegate.window.rootViewController;
 
     [currentVC presentViewController:alert animated:YES completion:nil];
-    
-    CFRunLoopRef runLoop = CFRunLoopGetCurrent();
-    CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
     
     while (!dismissed)
     {
@@ -59,14 +70,23 @@ NSString * const UncaughtExceptionHandlerAddressesKey = @"UncaughtExceptionHandl
             CFRunLoopRunInMode((CFStringRef)mode, 0.001, true);
         }
     }
-    CFRelease(allModes);
-    NSSetUncaughtExceptionHandler(NULL);
-    signal(SIGABRT, SIG_DFL);
-    signal(SIGILL, SIG_DFL);
-    signal(SIGSEGV, SIG_DFL);
-    signal(SIGFPE, SIG_DFL);
-    signal(SIGBUS, SIG_DFL);
-    signal(SIGPIPE, SIG_DFL);
+//    CFRelease(allModes);
+//    NSSetUncaughtExceptionHandler(NULL);
+//    signal(SIGABRT, SIG_DFL);
+//    signal(SIGILL, SIG_DFL);
+//    signal(SIGSEGV, SIG_DFL);
+//    signal(SIGFPE, SIG_DFL);
+//    signal(SIGBUS, SIG_DFL);
+//    signal(SIGPIPE, SIG_DFL);
+    if (!quit) {
+            NSRunLoop *runloop = [NSRunLoop currentRunLoop];
+            [runloop run];
+    }
+}
+
++ (void)runLoop  {
+    NSRunLoop *runloop = [NSRunLoop currentRunLoop];
+    [runloop run];
 }
 
 + (NSArray *)backtrace
@@ -86,7 +106,6 @@ NSString * const UncaughtExceptionHandlerAddressesKey = @"UncaughtExceptionHandl
          [backtrace addObject:[NSString stringWithUTF8String:strs[i]]];
      }
      free(strs);
-     
      return backtrace;
 }
 
