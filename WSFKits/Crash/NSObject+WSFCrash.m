@@ -122,5 +122,20 @@ static int Crash(id slf, SEL selector) {
     return 0;
 }
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    NSLog(@"(%@)对未定义的变量(%@)赋值",self->isa, key);
+}
+
+- (id)valueForUndefinedKey:(NSString *)key
+{
+    NSLog(@"(%@)取未定义的变量(%@)", self->isa, key);
+    return nil;
+}
+
+- (void)setNilValueForKey:(NSString *)key {
+    NSLog(@"(%@)变量(%@)插入NIL",self->isa, key);
+}
+
 
 @end
