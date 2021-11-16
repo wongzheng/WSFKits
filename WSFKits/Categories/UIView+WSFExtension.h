@@ -51,6 +51,7 @@ UIBorderSideTypeRight = 1 << 3,
 
 - (void)bezierCornerWithRadius:(CGFloat)radius corner:(UIRectCorner)corner;
 
+- (void)clearSublayers;
 @end
 
 NS_ASSUME_NONNULL_END

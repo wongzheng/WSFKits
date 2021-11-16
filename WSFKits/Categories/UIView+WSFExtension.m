@@ -146,4 +146,10 @@
     objc_setAssociatedObject(self, @selector(cornerModel), cornerModel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+- (void)clearSublayers {
+    for (CALayer *layer in self.layer.sublayers) {
+        [layer removeFromSuperlayer];
+    }
+}
+
 @end
